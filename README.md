@@ -15,6 +15,9 @@
    apt-get update && apt-get upgrade -y
    ```
    ```bash
+   apt install git
+   ```
+   ```bash
    composer require symfony/yaml
    ```
 
