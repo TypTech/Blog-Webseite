@@ -1,0 +1,10 @@
+posts:
+  A_Vorlage:
+    display: false
+    title: "A_Vorlage"
+
+  How-to-Install-WLED:
+    display: true
+    title: "How To Install WLED"
+
+

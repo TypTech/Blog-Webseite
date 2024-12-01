@@ -1,0 +1,83 @@
+/* Globale Schriftart und Grundstil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container für den Blogpost */
+.post-content {
+    width: 70%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Überschrift 1 für den Titel */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Sekundäre Überschrift für Untertitel */
+h2 {
+    font-size: 1.8em;
+    color: #1a73e8;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Absätze und Text */
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Benutzerdefinierte Liste ohne li-Elemente */
+.custom-list {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.custom-list .list-item {
+    position: relative; /* Für das Platzieren des Punktes */
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.custom-list .list-item::before {
+    content: "•";  /* Der Punkt */
+    font-size: 2em;
+    color: #1a73e8; /* Farbe des Punktes */
+    position: absolute;
+    left: -30px; /* Platzierung des Punktes */
+    top: 0;
+}
+
+/* Links */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Bild-Style für eingebettete Bilder */
+img {
+    display: block;
+    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

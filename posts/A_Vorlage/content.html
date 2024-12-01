@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Install WLED on Your Device</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="post-content">
+        <h1>How to Install WLED on Your Device</h1>
+        <p>WLED is a popular LED control software for controlling WS2812B and similar addressable RGB LED strips. In this guide, we will walk through how to install WLED on an ESP8266 or ESP32 device.</p>
+        
+        <h2>Materials Needed</h2>
+        <div class="custom-list">
+            <div class="list-item">- <a href="https://www.amazon.de/AZDelivery-D1-Mini-Entwicklungsboard-kompatibel/dp/B0754N794H/ref=sr_1_1_sspa?__mk_de_DE=ÅMÅŽÕÑ&crid=23Q2DIFL8STZG&dib=eyJ2IjoiMSJ9.cKidJsJbBDadLe1u5tYLe3MZ94IyqPnYgdEbcG2zuF4SjjbJNr7Wj9Toz3FGZ4Jw954VRDJfz__540MRhtFHPqd46ttC5kxdBvA5pBIfXA_gssCJj4ahK81x8Z3rYPtHGrFBdyWX9ScPtfgEuYuxRoC6llsNW4kSiyv7pGaKlsGK4t3iHm3U4o8TT7tyZa6n5MEc_DZJ-zumGtzOJGKL2BsKd-A1dE-sE99DwStuqM0.PvjUBLWsN8A82WThPyJkVoWZUJX8PrlyNBh1l02C2sE&dib_tag=se&keywords=wemos+d1+mini&nsdOptOutParam=true&qid=1733064261&sprefix=wemos+d1+mini%2Caps%2C122&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">D1 Mini</a> or <a href="https://www.amazon.de/Hailege-Interface-Internet-Wireless-Development/dp/B0CNYM2H3G/ref=sr_1_1_sspa?__mk_de_DE=ÅMÅŽÕÑ&crid=25B7W7XFEFBGU&dib=eyJ2IjoiMSJ9.y11FzcioaWvJKTGEZH6rYFOxrpCacBiGIePy8eKuI6Qb2904OGwozubZ7Z_wOyBWWRiPkWk3gPdDMhBrvPsVLD8UM7m9jT8V6Z4qS_go6iXrEzPc6i5ZaQQTsdwJ2t-Up5meM-V_RKyfKUsai6D9Gfvg0S-eFRTtsYdn1-yIiIGEaR9uNbTmcPAxzRM2r-T435GfHEir-GWOQIii4FjIcxRC56YimytTRiwhIcm7ZYQ.Wbl_NGU52BMoPW0db3ayMEAYABkJzIh1WdXdpNsaaK0&dib_tag=se&keywords=ESP8266&qid=1733064323&sprefix=esp8266%2Caps%2C131&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">ESP8266</a></div>
+            <div class="list-item">- <a href="https://www.amazon.de/Streifen-Individuell-Adressierbar-DIY-Design-Heimdekoration/dp/B0BTVBTHQ5/ref=asc_df_B0BTV9TD36/?tag=googshopde-21&linkCode=df0&hvadid=650945907827&hvpos=&hvnetw=g&hvrand=17815183497846936601&hvpone=&hvptwo=&hvqmt=&hvdev=m&hvdvcmdl=&hvlocint=&hvlocphy=9041646&hvtargid=pla-2194486126249&psc=1&mcid=a384141f5c7330699bf1e801d4d228e9&th=1" target="_blank">WS2812B</a> LED Strip</div>
+            <div class="list-item">- Power Supply for the LED Strip</div>
+            <div class="list-item">- Micro-USB Cable</div>
+            <div class="list-item">- WLED Firmware</div>
+        </div>
+
+        <h2>Step 1: Install WLED Firmware</h2>
+        <p>To install WLED on your D1 Mini or ESP8266, follow these steps:</p>
+        <div class="custom-list">
+            <div class="list-item">Go to the official <a href="https://install.wled.me/" target="_blank">WLED Install</a> website using Google Chrome or Chromium-based browsers.</div>
+            <div class="list-item">Follow the instructions on the website.</div>
+        </div>
+
+        <h2>Step 2: Prepare Your Hardware</h2>
+        <p>After installing the WLED firmware, you need to connect your controlling board to the WS2812B LED strip.</p>
+        <div class="list-item">Connect the VCC pin of the LED strip to the 5V pin of your microcontroller.</div>
+        <div class="list-item">Connect the GND pin of the LED strip to the GND pin of your microcontroller.</div>
+        <div class="list-item">Connect the DIN pin of the LED strip to the D4 pin of your microcontroller.</div>
+        <p>Here is an image of how it should look: <a href="https://diyodemag.com/_images/60127175c672e01669c2e758" target="_blank">Link</a></p>
+
+        <h2>Step 3: Configure WLED</h2>
+        <div class="list-item">After installing the firmware and connecting the WS2812B LED strip,</div>
+        <div class="list-item">connect to the web interface. The IP can be found in your WiFi router, and the device is named "WLED".</div>
+        <p>Then go to Config → LED Preferences, scroll to LED Outputs, and set the correct number of LEDs on your strip.</p>
+        <div class="list-item">Afterward, enter the LED count in the "Length" field, scroll to the bottom, and click "Save".</div>
+
+        <h2>Step 4: Enjoy Your Lights!</h2>
+        <p>Once everything is set up, you can begin controlling your LED strip using the WLED interface.</p>
+    </div>
+</body>
+</html>
