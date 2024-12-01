@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-require __DIR__ . '/../../vendor/autoload.php';
+require __DIR__ . 'vendor/autoload.php';
 
 use Symfony\Component\Yaml\Yaml;
 
@@ -45,7 +45,7 @@ if (is_dir($postsDir)) {
 <body>
     <div class="container">
         <h1>Blog</h1>
-        <a href="/overview" class="btn-back-home">Zurück zum Blog</a>
+        <a href="/index.html" class="btn-back-home">Zurück zum Blog</a>
         <div class="repo-list">
             <?php if (!empty($posts)): ?>
                 <?php foreach ($posts as $post): ?>
