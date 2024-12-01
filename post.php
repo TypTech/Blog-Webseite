@@ -35,7 +35,7 @@ if ($postTitle && is_dir($postPath)) {
 <body>
     <div class="container">
         <h1><?= htmlspecialchars($postTitle); ?></h1>
-        <a href="/blog" class="btn-back-home">Zurück zum Blog</a>
+        <a href="/index.php class="btn-back-home">Zurück zum Blog</a>
         <div class="repo-details">
             <?= $content; ?>
         </div>
